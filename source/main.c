@@ -2,16 +2,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-// Include the main libnx system header, for Switch development
 #include <switch.h>
-// Main program entrypoint
+
 int main(int argc, char* argv[])
 {
 
     int x = 0;
     char conNames[9][21] = {"Nintendo Switch \n", "Wii U \n", "Wii \n", "Gamecube \n", "Nintendo 64 \n", "Virtual Boy \n", "SNES \n", "NES \n"};
-
-    
 
     // Configure our supported input layout: a single player with standard controller styles
     padConfigureInput(1, HidNpadStyleSet_NpadStandard);
