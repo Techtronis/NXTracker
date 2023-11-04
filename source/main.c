@@ -8,7 +8,7 @@ int main(int argc, char* argv[])
 {
 
     int x = 0;
-    char conNames[9][21] = {"Nintendo Switch \n", "Wii U \n", "Wii \n", "Gamecube \n", "Nintendo 64 \n", "Virtual Boy \n", "SNES \n", "NES \n"};
+    char conNames[9][99] = {"Nintendo Switch \n Release Date: 03.03.2017", "Wii U \n Release Date: 2012", "Wii \n", "Gamecube \n", "Nintendo 64 \n", "Virtual Boy \n", "SNES \n", "NES \n"};
 
     // Configure our supported input layout: a single player with standard controller styles
     padConfigureInput(1, HidNpadStyleSet_NpadStandard);
@@ -16,7 +16,10 @@ int main(int argc, char* argv[])
     // Initialize the default gamepad (which reads handheld mode inputs as well as the first connected controller)
     PadState pad;
     padInitializeDefault(&pad);
+    consoleInit(NULL);
     printf("NXTracker v0.0.1\n \n");
+    x = 0;
+    printf(conNames[x]);
 
     // Main loop
     while (appletMainLoop())
