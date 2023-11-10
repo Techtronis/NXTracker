@@ -4,6 +4,11 @@ NESTracker but for the Nintendo Switch, i'm in very early developpement and I ha
 
 Just put the .nro folder inside of the /switch folder on your SD card and boot it up using the homebrew launcher.
 
+Just type 'make' in the zshell to build a new .nro file.
+
 Use the left and right arrows to navigate through the console names.
+
+
+Feel free to use this however you want.
 
 The app is likely going to crash.
