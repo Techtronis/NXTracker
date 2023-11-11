@@ -26,21 +26,33 @@ int consoleSelectScreen(int y)
     consoleUpdate(NULL);
 
     printf("NXTracker v0.0.1\n \n");
-    printf("Select a category: \n \n");
+    printf("Choose a console \n \n");
 
     if (y == 0)
     {
-        printf("Home Consoles");
+        for(int i = 0; i <= 8; i++)
+        {
+            printf(homeConNames[i]);
+            printf("\n \n");
+        }
         consoleUpdate(NULL);
     }
     else if (y == 1)
     {
-        printf("Handheld Consoles");
+        for(int i = 0; i <= 11; i++)
+        {
+            printf(handConNames[i]);
+            printf("\n \n");
+        }
         consoleUpdate(NULL);
     }
     else if (y == 2)
     {
-        printf("Current Consoles");
+        for(int i = 0; i <= 3; i++)
+        {
+            printf(currConNames[i]);
+            printf("\n \n");
+        }
         consoleUpdate(NULL);
     }
 
