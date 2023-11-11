@@ -5,10 +5,20 @@
 #include <malloc.h>
 #include <switch.h>
 
-char conNames[9][99] = {"Nintendo Switch \n", "Wii U \n",
+//      Home Consoles
+char homeConNames[8][99] = {"Wii U \n",
                         "Wii \n", "Gamecube \n",
                         "Nintendo 64 \n", "Virtual Boy \n",
                         "SNES \n", "NES \n"};
+//      Handheld Devices
+char handConNames[11][99] = {"Game & Watch", "Game Boy",
+                            "Game Boy Color", "Game Boy Advance",
+                            "Game Boy Advance SP", "Game Boy Micro",
+                            "Nintendo DS", "Nintendo DS Lite",
+                            "Nintendo DSi (XL)", "(New) Nintendo 3DS (XL)",
+                            "(New) Nintendo 2ds"};
+//      Current Consoles
+char currConNames[3][99] = {"Nintendo Switch", "Nintendo Switch Lite", "Nintendo Switch OLED model"};
 
 int consoleSelectScreen(int y)
 {
@@ -48,7 +58,7 @@ int main(int argc, char *argv[])
     consoleInit(NULL);
 
     x = 0;
-    printf("NXTracker v0.0.1\n \n");
+    printf("NXTracker v0.1\n \n");
     printf("Categories: \n\n [A] Home Consoles \n\n [B] Handheld Consoles [X] Current Consoles");
 
     // Main loop
