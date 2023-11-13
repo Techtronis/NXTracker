@@ -70,7 +70,6 @@ int main(int argc, char *argv[])
     padInitializeDefault(&pad);
     consoleInit(NULL);
 
-    char cursor[11][2];
 
     printf("NXTracker v0.1\n \n");
 
@@ -84,17 +83,9 @@ int main(int argc, char *argv[])
         padUpdate(&pad);
         padConfigureInput(1, HidNpadStyleSet_NpadStandard);
 
-        if (kDown & HidNpadButton_Down)
-        {
-            printf(">");
-            printf("\033[1A");
-        } else if (kDown & HidNpadButton_Up)
-        {
-            printf("\033[1B\n");
-            printf(">");
-        }
+        
         if (kDown & HidNpadButton_A)
-        {
+        {  
             consoleSelectScreen(0);
             consoleUpdate(NULL);
         }

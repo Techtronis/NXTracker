@@ -5288,7 +5288,7 @@ Linker script and memory map
  *(.rodata .rodata.* .gnu.linkonce.r.*)
  .rodata.str1.8
                 0x000000000002e660      0x3a7 main.o
-                                         0xfc (size before relaxing)
+                                         0xfd (size before relaxing)
  *fill*         0x000000000002ea07        0x1 
  .rodata.CSWTCH.529
                 0x000000000002ea08       0x14 /opt/devkitpro/libnx/lib/libnx.a(applet.o)
