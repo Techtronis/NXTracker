@@ -86,13 +86,12 @@ int main(int argc, char *argv[])
 
         if (kDown & HidNpadButton_Down)
         {
-            for(int i = 0; i <= 11; i++)
-            {
-                strcpy(cursor[i], "");
-                printf(cursor[i]);
-                printf("\n"); 
-            }
-            printf("\033[12A");
+            printf(">");
+            printf("\033[1A");
+        } else if (kDown & HidNpadButton_Up)
+        {
+            printf("\033[1B\n");
+            printf(">");
         }
         if (kDown & HidNpadButton_A)
         {
